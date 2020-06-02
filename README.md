@@ -1,6 +1,8 @@
-# Vega Kütüphanesine Hoşgeldiniz
+# Welcome To Vega
 
-\*\*\*\*
+![](.gitbook/assets/wega.png)
+
+Only Turkish and English documents are available for now.
 
 \*\*\*\*
 

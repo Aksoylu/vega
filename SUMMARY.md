@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Vega Kütüphanesine Hoşgeldiniz](README.md)
+* [Welcome To Vega](README.md)
 
 ## Turkish
 
