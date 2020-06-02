@@ -14,13 +14,13 @@ Bu 36 elemanlı dizi, 1500 elemanlı dataset \(görseller\) dizisinin bir eleman
 
 Bu dataseti eğitmek için,
 
-SinirAgi = vega.Katman\(\[4,4\], \[36,36\]\)
+`SinirAgi = vega.Katman([4,4], [36,36])`
 
 Metodu ile 4 nöronu olan 2 adet katman oluşturulur. Bu katmanlardaki tüm nöronların weight sayısı ise 36 olarak belirlenmiştir. Zira eğitim dizimiz de 36 elemanlı olduğundan, en iyi öğrenme için 36 weight olmalıdır.
 
-learning\_rate = 0.001
+`learning_rate = 0.001`
 
-epoch = 5000
+`epoch = 5000`
 
 Öğrenme oranı ve devir sayısı tercihe göre değiştirilebilir. Vega henüz multithreading desteklemediğinden yüksek devir sayıları fazla uzun sürebilmektedir.
 
@@ -30,7 +30,7 @@ Targets değişkeni ise, 1500 adet 1 ve 0 sayısından oluşmaktadır. Dataset d
 
 Yani dataset’ deki \(i\) numaralı her gözün açık veya kapalı olma durumu, targets dizisinin \(i\) numaralı elemanında belirtilmektedir.
 
-SinirAgi.train\(dataset, targets,learning\_rate, epoch\)
+`SinirAgi.train(dataset, targets,learning_rate, epoch)`
 
 Train metodu ile öğrenme süreci 5000’inci devire kadar sürecektir. Loss değerinin düşmesi, ağın başarılı bir öğrenme süreci geçirdiği anlamına gelir
 
@@ -38,7 +38,7 @@ Train metodu ile öğrenme süreci 5000’inci devire kadar sürecektir. Loss de
 
 Öğrenme işleminin ardından bellekteki güncellenmiş ağırlıklar, Json formatında bir dosyaya kaydedilebilir. Bunun için
 
-SinirAgi.saveModel\("acik\_kapali\_goz\_\_network"\)
+`SinirAgi.saveModel("acik_kapali_goz__network")`
 
 Fonksiyonu kullanılır. Böylece **acik\_kapali\_goz\_\_network.neurons**
 
@@ -46,15 +46,15 @@ Fonksiyonu kullanılır. Böylece **acik\_kapali\_goz\_\_network.neurons**
 
 Bu metod ile;
 
-testData=np.array\(testImage\).flatten\(\)
+`testData=np.array(testImage).flatten()`
 
 eğitilmiş ağı test etmek için bir göz fotoğrafı test verisi olarak hazırlanır.
 
-\#Make Prediction After Training
+`#Make Prediction After Training`
 
-prediction = SinirAgi.feedforward\(testData\)
+`prediction = SinirAgi.feedforward(testData)`
 
-print\(prediction\)
+`print(prediction)`
 
 feedforward metodu ile ağın tahmin edilen değeri ekrana yansıtılır. Eğer ağ tarafından tahmin edilen eğer 1’e yakınsa testData fotoğrafındaki göz açık, 0’a yakınsa ise kapalı demektir.
 
