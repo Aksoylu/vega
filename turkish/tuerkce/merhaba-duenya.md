@@ -9,13 +9,13 @@ Vega'nın Türkçe dökümantasyon sayfasına hoş geldiniz. Vega'yı şu anda p
 Sihirli dünyaya hemen giriş yapın ve **terminale** şunları yazın;
 
 {% hint style="success" %}
-pip install vega
+pip install vegav1
 {% endhint %}
 
 ve ardından python kod satırınızın başına şunu ekleyin;
 
 {% hint style="success" %}
-import vega
+import vegav1
 {% endhint %}
 
 Tebrikler, artık **Vega** sizinle.

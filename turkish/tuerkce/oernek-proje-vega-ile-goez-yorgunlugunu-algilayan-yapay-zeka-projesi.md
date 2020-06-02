@@ -14,7 +14,7 @@ Bu 36 elemanlı dizi, 1500 elemanlı dataset \(görseller\) dizisinin bir eleman
 
 Bu dataseti eğitmek için,
 
-`SinirAgi = vega.Katman([4,4], [36,36])`
+`SinirAgi = vegav1.Katman([4,4], [36,36])`
 
 Metodu ile 4 nöronu olan 2 adet katman oluşturulur. Bu katmanlardaki tüm nöronların weight sayısı ise 36 olarak belirlenmiştir. Zira eğitim dizimiz de 36 elemanlı olduğundan, en iyi öğrenme için 36 weight olmalıdır.
 

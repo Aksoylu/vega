@@ -6,7 +6,7 @@ description: Vega Fonksiyonları
 
 ### **1- vega.Katman \(Ağ oluşturmak\)**
 
-`neuralNetwork = vega.Katman([4,4], [36,36])`
+`neuralNetwork = vegav1.Katman([4,4], [36,36])`
 
 neuralNetwork isminde ve 2 gizli katmana, toplam 4 katmana sahip, her bir katmanda 4 nöronun ve her nöronun da 36 weight\(bağlantı\) sayısına sahip olduğu bir ağ oluşturur.
 
@@ -14,7 +14,7 @@ neuralNetwork isminde ve 2 gizli katmana, toplam 4 katmana sahip, her bir katman
 
 İkinci parametre olan \[36,36\] ise birinci katmanda 36, ikinci katmanda da 36 bağlantı \(weight\) oluşturulmasını sağlar.
 
-Örneğin `vega.Katman([3,2], [12,2])` çağrısı, ilk katmanın 3, ikinci katmanın 2 nörona sahip olduğu ve ilk katmandaki nöronların 12 weight sayısı, ikinci katmandaki nöronların ise 2 weight sayısına sahip olduğu bir ağ yapısını inşa eder.
+Örneğin `vegav1.Katman([3,2], [12,2])` çağrısı, ilk katmanın 3, ikinci katmanın 2 nörona sahip olduğu ve ilk katmandaki nöronların 12 weight sayısı, ikinci katmandaki nöronların ise 2 weight sayısına sahip olduğu bir ağ yapısını inşa eder.
 
 ### **2- &lt;Ağ&gt;.Name \(Ağ’a isim vermek\)**
 

@@ -6,5 +6,5 @@ Only Turkish and English documents are available for now.
 
 Henüz yalnızca Türkçe ve İngilizce dökümanlar mevcuttur.
 
-please visit for manual => [Manual Page](http://vega.aksoylu.space)
+please visit for manual =&gt; [Manual Page](http://vega.aksoylu.space)
 
