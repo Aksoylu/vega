@@ -5,6 +5,7 @@
 ## Turkish
 
 * [Türkçe](turkish/tuerkce/README.md)
+  * [Merhaba Dünya](turkish/tuerkce/merhaba-duenya.md)
   * [Vega Hakkında](turkish/tuerkce/untitled.md)
   * [Desteklenen Platformlar](turkish/tuerkce/desteklenen-platformlar.md)
   * [İşlevler](turkish/tuerkce/islevler.md)
