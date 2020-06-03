@@ -70,7 +70,7 @@ feedforward metodu ile ağın tahmin edilen değeri ekrana yansıtılır. Eğer 
 
 Daha fazla ağ ve daha fazla epoch ile daha keskin sonuçların alınması sağlanılabilir.
 
-[http://github.com/Aksoylu/deep-learning-eye-blink-detection](http://github.com/Aksoylu/deep-learning-eye-blink-detection)
+[http://github.com/Aksoylu/deep-learning-eye-blink-detection](https://github.com/Aksoylu/Eye-Blink-Detection-Deep-Learning-Project)
 
 bağlantısı üzerinden projenin kaynak kodlarıne erişilebilir.
 
