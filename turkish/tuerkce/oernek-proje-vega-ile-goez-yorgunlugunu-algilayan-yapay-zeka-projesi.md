@@ -6,11 +6,17 @@ description: 'Örnek Proje : Vega ile göz yorgunluğunu algılayan yapay zeka p
 
 Bu proje, bir dakika içerisinde kaç defa göz kırpıldığını algılayarak, tıbbi sınır olarak kabul edilen dakikada 15 göz kırpmanın aşılmasının ardından kullanıcıyı uyarmaktadır. Vega kütüphanesi bu proje kapsamında göz fotoğraflarının açık veya kapalı olduğunun algılanması için kullanılmaktadır.
 
+![](../../.gitbook/assets/aga.gif)
+
 Proje kapsamında 1500 civarı 24x24 piksel çözünürlüğünde açık ve kapalı göz fotoğrafları ağı eğitmek için kullanılmıştır. OpenCV kütüphanesini kullanarak grayscale\(siyah-beyaz\) tonlarında olan görseller, 24x24 boyutunda ve renk değerleri 0 ile 1 arasına sıkıştırılmış bir matrise dönüştürülmüştür. Ardından bu matris, ağın daha kolay eğitilebilmesi için bir sıkıştırma işleminden geçirilmiş ve 6x6 boyutlarına indirgenmiştir.
 
 Bu işlemlerden sonra, tüm resimler düzleştirilmiş, yani 36 elemanlı düz bir dizi haline getirilmiştir.
 
-Bu 36 elemanlı dizi, 1500 elemanlı dataset \(görseller\) dizisinin bir elemanıdır.
+{% hint style="info" %}
+Eğitimin daha hızlı ve kolay olması için daha ufak bir dataset kullanılmıştır. Dilerseniz daha büyük bir dataset de kullanabilirsiniz.
+{% endhint %}
+
+Bu 36 elemanlı dizi, görsel sayısı kadar elemanlı dataset \(görseller\) dizisinin bir elemanıdır.
 
 Bu dataseti eğitmek için,
 
@@ -49,6 +55,10 @@ Bu metod ile;
 `testData=np.array(testImage).flatten()`
 
 eğitilmiş ağı test etmek için bir göz fotoğrafı test verisi olarak hazırlanır.
+
+{% hint style="info" %}
+Buraya kadar anlatılan içerik, kaynak kodlardaki trainer.py dosyasında bulunmaktadır. Yani ağı tekrar eğitmek için python3 trainer.py komutunu çalıştırmalısınız.
+{% endhint %}
 
 `#Make Prediction After Training`
 
